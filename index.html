@@ -23,9 +23,10 @@
         font-weight: 400;
         text-decoration: none;
         vertical-align: baseline;
-        font-size: 10pt;
+        font-size: 12pt;
         font-family: "Roboto Serif";
         font-style: normal;
+        line-height: 1.5;
       }
       .c13 {
         color: #000000;
@@ -36,15 +37,7 @@
         font-family: "Roboto Serif";
         font-style: normal;
       }
-      .c10 {
-        color: #000000;
-        font-weight: 900;
-        text-decoration: none;
-        vertical-align: baseline;
-        font-size: 32pt;
-        font-family: "Playfair Display";
-        font-style: normal;
-      }
+
       .c9 {
         color: #000000;
         font-weight: 400;
@@ -59,10 +52,17 @@
         font-weight: 400;
         text-decoration: none;
         vertical-align: baseline;
-        font-size: 16pt;
+        font-size: 12pt;
         font-family: "Roboto Mono";
         font-style: normal;
       }
+
+      @media (max-width: 720px) {
+        .c8 {
+          font-size: 10pt;
+        }
+      }
+
       .c0 {
         color: #000000;
         font-weight: 400;
@@ -120,10 +120,6 @@
         color: #999999;
         font-weight: 400;
       }
-      .c14 {
-        font-weight: 900;
-        font-family: "Playfair Display";
-      }
       .c4 {
         height: 10pt;
       }
@@ -180,6 +176,9 @@
         text-align: center;
       }
       h2 {
+        display: flex;
+        align-items: end;
+        gap: 0.5rem;
         padding-top: 15pt;
         color: #000000;
         font-weight: 900;
@@ -193,6 +192,13 @@
         widows: 2;
         text-align: left;
       }
+
+      @media (max-width: 720px) {
+        h2 {
+          font-size: 24pt;
+        }
+      }
+
       h3 {
         padding-top: 16pt;
         color: #666666;
@@ -243,8 +249,8 @@
         widows: 2;
         text-align: left;
       }
-      h2 > span:first-child {
-        margin-right: 24pt;
+
+      h2 {
       }
 
       body {
@@ -352,7 +358,7 @@
   <body class="doc-content">
     <main class="">
       <h2 class="c6" id="h.ohwjg764wkmz">
-        <span>Guria</span><span class="c12">2011</span>
+        <span>Guria</span><span class="c8">2011</span>
       </h2>
       <p class="c2">
         <span class="c1">Ser&aacute; que um dia poderei amar a senhora?</span>
